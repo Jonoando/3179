@@ -14,7 +14,7 @@
   "layer": [
     {
       "data": {
-        "url": "js/AustralianMapWithGraticules.topojson",
+        "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_50m_admin_1_states_provinces" }
       },
       "transform": [
@@ -22,7 +22,7 @@
         {
           "lookup": "state",
           "from": {
-            "data": { "url": "data/producers_by_state_year.csv" },
+            "data": { "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/data/producers_by_state_year.csv" },
             "key": "state",
             "fields": ["year", "value"]
           }
@@ -46,7 +46,7 @@
     },
     {
       "data": {
-        "url": "js/AustralianMapWithGraticules.topojson",
+        "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#d3d3d3", "strokeWidth": 0.5 }
@@ -58,3 +58,4 @@
     "legend": { "titleFontSize": 12, "labelFontSize": 12 }
   }
 }
+
