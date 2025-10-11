@@ -1,41 +1,41 @@
-state,year,value
-Western Australia,2020,317
-Western Australia,2021,309
-Western Australia,2022,304
-Western Australia,2023,288
-Western Australia,2024,281
-Victoria,2020,651
-Victoria,2021,635
-Victoria,2022,630
-Victoria,2023,613
-Victoria,2024,623
-New South Wales,2020,423
-New South Wales,2021,401
-New South Wales,2022,424
-New South Wales,2023,408
-New South Wales,2024,389
-South Australia,2020,711
-South Australia,2021,654
-South Australia,2022,695
-South Australia,2023,695
-South Australia,2024,696
-Australian Capital Territory,2020,423
-Australian Capital Territory,2021,401
-Australian Capital Territory,2022,424
-Australian Capital Territory,2023,408
-Australian Capital Territory,2024,389
-Tasmania,2020,99
-Tasmania,2021,99
-Tasmania,2022,95
-Tasmania,2023,93
-Tasmania,2024,93
-Queensland,2020,67
-Queensland,2021,66
-Queensland,2022,65
-Queensland,2023,67
-Queensland,2024,66
-Northern Territory,2020,0
-Northern Territory,2021,0
-Northern Territory,2022,0
-Northern Territory,2023,0
-Northern Territory,2024,0
+key,state,year,value
+Western Australia_2020,Western Australia,2020,317
+Western Australia_2021,Western Australia,2021,309
+Western Australia_2022,Western Australia,2022,304
+Western Australia_2023,Western Australia,2023,288
+Western Australia_2024,Western Australia,2024,281
+Victoria_2020,Victoria,2020,651
+Victoria_2021,Victoria,2021,635
+Victoria_2022,Victoria,2022,630
+Victoria_2023,Victoria,2023,613
+Victoria_2024,Victoria,2024,623
+New South Wales_2020,New South Wales,2020,423
+New South Wales_2021,New South Wales,2021,401
+New South Wales_2022,New South Wales,2022,424
+New South Wales_2023,New South Wales,2023,408
+New South Wales_2024,New South Wales,2024,389
+South Australia_2020,South Australia,2020,711
+South Australia_2021,South Australia,2021,654
+South Australia_2022,South Australia,2022,695
+South Australia_2023,South Australia,2023,695
+South Australia_2024,South Australia,2024,696
+Australian Capital Territory_2020,Australian Capital Territory,2020,423
+Australian Capital Territory_2021,Australian Capital Territory,2021,401
+Australian Capital Territory_2022,Australian Capital Territory,2022,424
+Australian Capital Territory_2023,Australian Capital Territory,2023,408
+Australian Capital Territory_2024,Australian Capital Territory,2024,389
+Tasmania_2020,Tasmania,2020,99
+Tasmania_2021,Tasmania,2021,99
+Tasmania_2022,Tasmania,2022,95
+Tasmania_2023,Tasmania,2023,93
+Tasmania_2024,Tasmania,2024,93
+Queensland_2020,Queensland,2020,67
+Queensland_2021,Queensland,2021,66
+Queensland_2022,Queensland,2022,65
+Queensland_2023,Queensland,2023,67
+Queensland_2024,Queensland,2024,66
+Northern Territory_2020,Northern Territory,2020,0
+Northern Territory_2021,Northern Territory,2021,0
+Northern Territory_2022,Northern Territory,2022,0
+Northern Territory_2023,Northern Territory,2023,0
+Northern Territory_2024,Northern Territory,2024,0
