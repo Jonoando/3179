@@ -2,32 +2,32 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 880,
   "height": 520,
-  "title": "Australian Wine Producers by State (select year)",
-  "projection": {"type": "equalEarth"},
+  "title": "Density of Wine Producers by State",
+  "projection": { "type": "mercator", "center": [134, -25], "scale": 900 },
   "params": [
     {
       "name": "year_select",
       "value": 2024,
-      "bind": {"input": "range", "min": 2020, "max": 2024, "step": 1}
+      "bind": { "input": "range", "name": "Year Selection Slider: ", "min": 2020, "max": 2024, "step": 1 }
     }
   ],
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/js/AustralianMapWithGraticules.topojson",
+        "url": "js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_50m_admin_1_states_provinces" }
       },
       "transform": [
         { "calculate": "datum.properties.name", "as": "state" },
+        { "calculate": "datum.state + '_' + toString(year_select)", "as": "key" },
         {
-          "lookup": "state",
+          "lookup": "key",
           "from": {
-            "data": { "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/data/producers_by_state_year.csv" },
-            "key": "state",
-            "fields": ["year", "value"]
+            "data": { "url": "data/producers_by_state_year.csv" },
+            "key": "key",
+            "fields": ["value"]
           }
-        },
-        { "filter": "datum.year == year_select" }
+        }
       ],
       "mark": { "type": "geoshape", "stroke": "white" },
       "encoding": {
@@ -39,14 +39,13 @@
         },
         "tooltip": [
           { "field": "state", "type": "nominal", "title": "State" },
-          { "field": "year", "type": "quantitative" },
           { "field": "value", "type": "quantitative", "title": "Producers" }
         ]
       }
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/Jonoando/3179/main/Map_Example/js/AustralianMapWithGraticules.topojson",
+        "url": "js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#d3d3d3", "strokeWidth": 0.5 }
@@ -58,4 +57,3 @@
     "legend": { "titleFontSize": 12, "labelFontSize": 12 }
   }
 }
-
