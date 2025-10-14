@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Australia: Apparent Alcohol Consumption per Capita (L of Pure Alcohol)",
+  "width": 780,
+  "height": 380,
+  "data": { "url": "data/Apparent_Consumption_Per_Capita.csv" },
+
+  "transform": [
+    {
+      "fold": ["Beer (L)", "Wine (L)", "Spirits(b) (L)", "Cider (L)", "Total (L)"],
+      "as": ["Series", "Value"]
+    },
+    { "calculate": "toNumber(datum.Value)", "as": "Val" }
+  ],
+
+  "layer": [
+    {
+      "mark": { "type": "line", "strokeWidth": 2 },
+      "encoding": {
+        "x": { "field": "Year ended 30 June", "type": "ordinal", "title": "Year" },
+        "y": { "field": "Val", "type": "quantitative", "title": "Litres per capita" },
+        "color": {
+          "field": "Series",
+          "type": "nominal",
+          "title": "Beverage",
+          "scale": { "scheme": "tableau10" }
+        },
+        "tooltip": [
+          { "field": "Year ended 30 June", "type": "ordinal", "title": "Year" },
+          { "field": "Series", "type": "nominal", "title": "Series" },
+          { "field": "Val", "type": "quantitative", "title": "L per capita", "format": ".2f" }
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "filter": "datum.Series == 'Total (L)'" },
+        { "window": [{ "op": "rank", "as": "r" }], "sort": [{ "field": "Val", "order": "descending" }] },
+        { "filter": "datum.r == 1" }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 110 },
+      "encoding": {
+        "x": { "field": "Year ended 30 June", "type": "ordinal" },
+        "y": { "field": "Val", "type": "quantitative" },
+        "color": { "value": "#4d4d4d" },
+        "tooltip": [
+          { "field": "Year ended 30 June", "type": "ordinal", "title": "Peak Total (Year)" },
+          { "field": "Val", "type": "quantitative", "title": "Peak Total (L)", "format": ".2f" }
+        ]
+      }
+    },
+
+    {
+      "transform": [
+        { "filter": "datum.Series == 'Wine (L)'" },
+        { "window": [{ "op": "rank", "as": "r" }], "sort": [{ "field": "Val", "order": "descending" }] },
+        { "filter": "datum.r == 1" }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 110 },
+      "encoding": {
+        "x": { "field": "Year ended 30 June", "type": "ordinal" },
+        "y": { "field": "Val", "type": "quantitative" },
+        "color": { "value": "#1f77b4" },
+        "tooltip": [
+          { "field": "Year ended 30 June", "type": "ordinal", "title": "Peak Wine (Year)" },
+          { "field": "Val", "type": "quantitative", "title": "Peak Wine (L)", "format": ".2f" }
+        ]
+      }
+    }
+  ],
+
+  "config": {
+    "axis": { "labelFontSize": 12, "titleFontSize": 12 },
+    "legend": { "labelFontSize": 12, "titleFontSize": 12 }
+  }
+}
