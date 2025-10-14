@@ -8,7 +8,7 @@
     {
       "name": "year_select",
       "value": 2024,
-      "bind": { "input": "range", "name": "Year Selection Slider: ", "min": 2020, "max": 2024, "step": 1 }
+      "bind": { "input": "range", "name": "Year Selection Slider: ", "min": 1991, "max": 2024, "step": 1 }
     }
   ],
   "layer": [
@@ -35,7 +35,7 @@
           "field": "value",
           "type": "quantitative",
           "title": "Producers",
-          "scale": { "scheme": "blues" }
+          "scale": { "scheme": "blues", "domain": [0, 800], "clamp": true }
         },
         "tooltip": [
           { "field": "state", "type": "nominal", "title": "State" },
