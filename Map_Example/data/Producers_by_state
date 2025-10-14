@@ -1,41 +1,273 @@
 key,state,year,value
-Western Australia_2020,Western Australia,2020,317
-Western Australia_2021,Western Australia,2021,309
-Western Australia_2022,Western Australia,2022,304
-Western Australia_2023,Western Australia,2023,288
-Western Australia_2024,Western Australia,2024,281
-Victoria_2020,Victoria,2020,651
-Victoria_2021,Victoria,2021,635
-Victoria_2022,Victoria,2022,630
-Victoria_2023,Victoria,2023,613
-Victoria_2024,Victoria,2024,623
+New South Wales_1991,New South Wales,1991,161
+New South Wales_1992,New South Wales,1992,159
+New South Wales_1993,New South Wales,1993,170
+New South Wales_1994,New South Wales,1994,174
+New South Wales_1995,New South Wales,1995,178
+New South Wales_1996,New South Wales,1996,195
+New South Wales_1997,New South Wales,1997,209
+New South Wales_1998,New South Wales,1998,241
+New South Wales_1999,New South Wales,1999,273
+New South Wales_2000,New South Wales,2000,293
+New South Wales_2001,New South Wales,2001,331
+New South Wales_2002,New South Wales,2002,367
+New South Wales_2003,New South Wales,2003,392
+New South Wales_2004,New South Wales,2004,408
+New South Wales_2005,New South Wales,2005,428
+New South Wales_2006,New South Wales,2006,432
+New South Wales_2007,New South Wales,2007,452
+New South Wales_2008,New South Wales,2008,443
+New South Wales_2009,New South Wales,2009,467
+New South Wales_2010,New South Wales,2010,475
+New South Wales_2011,New South Wales,2011,474
+New South Wales_2012,New South Wales,2012,487
+New South Wales_2013,New South Wales,2013,484
+New South Wales_2014,New South Wales,2014,469
+New South Wales_2015,New South Wales,2015,463
+New South Wales_2016,New South Wales,2016,441
+New South Wales_2017,New South Wales,2017,438
+New South Wales_2018,New South Wales,2018,424
+New South Wales_2019,New South Wales,2019,419
 New South Wales_2020,New South Wales,2020,423
 New South Wales_2021,New South Wales,2021,401
 New South Wales_2022,New South Wales,2022,424
 New South Wales_2023,New South Wales,2023,408
 New South Wales_2024,New South Wales,2024,389
-South Australia_2020,South Australia,2020,711
-South Australia_2021,South Australia,2021,654
-South Australia_2022,South Australia,2022,695
-South Australia_2023,South Australia,2023,695
-South Australia_2024,South Australia,2024,696
+Australian Capital Territory_1991,Australian Capital Territory,1991,161
+Australian Capital Territory_1992,Australian Capital Territory,1992,159
+Australian Capital Territory_1993,Australian Capital Territory,1993,170
+Australian Capital Territory_1994,Australian Capital Territory,1994,174
+Australian Capital Territory_1995,Australian Capital Territory,1995,178
+Australian Capital Territory_1996,Australian Capital Territory,1996,195
+Australian Capital Territory_1997,Australian Capital Territory,1997,209
+Australian Capital Territory_1998,Australian Capital Territory,1998,241
+Australian Capital Territory_1999,Australian Capital Territory,1999,273
+Australian Capital Territory_2000,Australian Capital Territory,2000,293
+Australian Capital Territory_2001,Australian Capital Territory,2001,331
+Australian Capital Territory_2002,Australian Capital Territory,2002,367
+Australian Capital Territory_2003,Australian Capital Territory,2003,392
+Australian Capital Territory_2004,Australian Capital Territory,2004,408
+Australian Capital Territory_2005,Australian Capital Territory,2005,428
+Australian Capital Territory_2006,Australian Capital Territory,2006,432
+Australian Capital Territory_2007,Australian Capital Territory,2007,452
+Australian Capital Territory_2008,Australian Capital Territory,2008,443
+Australian Capital Territory_2009,Australian Capital Territory,2009,467
+Australian Capital Territory_2010,Australian Capital Territory,2010,475
+Australian Capital Territory_2011,Australian Capital Territory,2011,474
+Australian Capital Territory_2012,Australian Capital Territory,2012,487
+Australian Capital Territory_2013,Australian Capital Territory,2013,484
+Australian Capital Territory_2014,Australian Capital Territory,2014,469
+Australian Capital Territory_2015,Australian Capital Territory,2015,463
+Australian Capital Territory_2016,Australian Capital Territory,2016,441
+Australian Capital Territory_2017,Australian Capital Territory,2017,438
+Australian Capital Territory_2018,Australian Capital Territory,2018,424
+Australian Capital Territory_2019,Australian Capital Territory,2019,419
 Australian Capital Territory_2020,Australian Capital Territory,2020,423
 Australian Capital Territory_2021,Australian Capital Territory,2021,401
 Australian Capital Territory_2022,Australian Capital Territory,2022,424
 Australian Capital Territory_2023,Australian Capital Territory,2023,408
 Australian Capital Territory_2024,Australian Capital Territory,2024,389
-Tasmania_2020,Tasmania,2020,99
-Tasmania_2021,Tasmania,2021,99
-Tasmania_2022,Tasmania,2022,95
-Tasmania_2023,Tasmania,2023,93
-Tasmania_2024,Tasmania,2024,93
+Victoria_1991,Victoria,1991,204
+Victoria_1992,Victoria,1992,220
+Victoria_1993,Victoria,1993,243
+Victoria_1994,Victoria,1994,256
+Victoria_1995,Victoria,1995,274
+Victoria_1996,Victoria,1996,279
+Victoria_1997,Victoria,1997,298
+Victoria_1998,Victoria,1998,322
+Victoria_1999,Victoria,1999,336
+Victoria_2000,Victoria,2000,369
+Victoria_2001,Victoria,2001,416
+Victoria_2002,Victoria,2002,461
+Victoria_2003,Victoria,2003,521
+Victoria_2004,Victoria,2004,560
+Victoria_2005,Victoria,2005,583
+Victoria_2006,Victoria,2006,628
+Victoria_2007,Victoria,2007,687
+Victoria_2008,Victoria,2008,698
+Victoria_2009,Victoria,2009,724
+Victoria_2010,Victoria,2010,738
+Victoria_2011,Victoria,2011,750
+Victoria_2012,Victoria,2012,776
+Victoria_2013,Victoria,2013,773
+Victoria_2014,Victoria,2014,745
+Victoria_2015,Victoria,2015,747
+Victoria_2016,Victoria,2016,722
+Victoria_2017,Victoria,2017,717
+Victoria_2018,Victoria,2018,660
+Victoria_2019,Victoria,2019,645
+Victoria_2020,Victoria,2020,651
+Victoria_2021,Victoria,2021,635
+Victoria_2022,Victoria,2022,630
+Victoria_2023,Victoria,2023,613
+Victoria_2024,Victoria,2024,623
+Queensland_1991,Queensland,1991,19
+Queensland_1992,Queensland,1992,21
+Queensland_1993,Queensland,1993,21
+Queensland_1994,Queensland,1994,21
+Queensland_1995,Queensland,1995,29
+Queensland_1996,Queensland,1996,33
+Queensland_1997,Queensland,1997,38
+Queensland_1998,Queensland,1998,44
+Queensland_1999,Queensland,1999,48
+Queensland_2000,Queensland,2000,70
+Queensland_2001,Queensland,2001,74
+Queensland_2002,Queensland,2002,89
+Queensland_2003,Queensland,2003,101
+Queensland_2004,Queensland,2004,100
+Queensland_2005,Queensland,2005,105
+Queensland_2006,Queensland,2006,109
+Queensland_2007,Queensland,2007,107
+Queensland_2008,Queensland,2008,106
+Queensland_2009,Queensland,2009,111
+Queensland_2010,Queensland,2010,111
+Queensland_2011,Queensland,2011,107
+Queensland_2012,Queensland,2012,101
+Queensland_2013,Queensland,2013,100
+Queensland_2014,Queensland,2014,85
+Queensland_2015,Queensland,2015,79
+Queensland_2016,Queensland,2016,74
+Queensland_2017,Queensland,2017,74
+Queensland_2018,Queensland,2018,70
+Queensland_2019,Queensland,2019,67
 Queensland_2020,Queensland,2020,67
 Queensland_2021,Queensland,2021,66
 Queensland_2022,Queensland,2022,65
 Queensland_2023,Queensland,2023,67
 Queensland_2024,Queensland,2024,66
+South Australia_1991,South Australia,1991,183
+South Australia_1992,South Australia,1992,188
+South Australia_1993,South Australia,1993,194
+South Australia_1994,South Australia,1994,199
+South Australia_1995,South Australia,1995,211
+South Australia_1996,South Australia,1996,222
+South Australia_1997,South Australia,1997,236
+South Australia_1998,South Australia,1998,257
+South Australia_1999,South Australia,1999,275
+South Australia_2000,South Australia,2000,308
+South Australia_2001,South Australia,2001,353
+South Australia_2002,South Australia,2002,391
+South Australia_2003,South Australia,2003,432
+South Australia_2004,South Australia,2004,471
+South Australia_2005,South Australia,2005,502
+South Australia_2006,South Australia,2006,563
+South Australia_2007,South Australia,2007,607
+South Australia_2008,South Australia,2008,620
+South Australia_2009,South Australia,2009,648
+South Australia_2010,South Australia,2010,667
+South Australia_2011,South Australia,2011,695
+South Australia_2012,South Australia,2012,704
+South Australia_2013,South Australia,2013,720
+South Australia_2014,South Australia,2014,703
+South Australia_2015,South Australia,2015,706
+South Australia_2016,South Australia,2016,699
+South Australia_2017,South Australia,2017,695
+South Australia_2018,South Australia,2018,684
+South Australia_2019,South Australia,2019,683
+South Australia_2020,South Australia,2020,711
+South Australia_2021,South Australia,2021,654
+South Australia_2022,South Australia,2022,695
+South Australia_2023,South Australia,2023,695
+South Australia_2024,South Australia,2024,696
+Northern Territory_1991,Northern Territory,1991,1
+Northern Territory_1992,Northern Territory,1992,1
+Northern Territory_1993,Northern Territory,1993,1
+Northern Territory_1994,Northern Territory,1994,1
+Northern Territory_1995,Northern Territory,1995,1
+Northern Territory_1996,Northern Territory,1996,1
+Northern Territory_1997,Northern Territory,1997,1
+Northern Territory_1998,Northern Territory,1998,1
+Northern Territory_1999,Northern Territory,1999,1
+Northern Territory_2000,Northern Territory,2000,1
+Northern Territory_2001,Northern Territory,2001,1
+Northern Territory_2002,Northern Territory,2002,0
+Northern Territory_2003,Northern Territory,2003,0
+Northern Territory_2004,Northern Territory,2004,1
+Northern Territory_2005,Northern Territory,2005,1
+Northern Territory_2006,Northern Territory,2006,1
+Northern Territory_2007,Northern Territory,2007,0
+Northern Territory_2008,Northern Territory,2008,0
+Northern Territory_2009,Northern Territory,2009,0
+Northern Territory_2010,Northern Territory,2010,0
+Northern Territory_2011,Northern Territory,2011,0
+Northern Territory_2012,Northern Territory,2012,0
+Northern Territory_2013,Northern Territory,2013,0
+Northern Territory_2014,Northern Territory,2014,0
+Northern Territory_2015,Northern Territory,2015,0
+Northern Territory_2016,Northern Territory,2016,0
+Northern Territory_2017,Northern Territory,2017,0
+Northern Territory_2018,Northern Territory,2018,0
+Northern Territory_2019,Northern Territory,2019,0
 Northern Territory_2020,Northern Territory,2020,0
 Northern Territory_2021,Northern Territory,2021,0
 Northern Territory_2022,Northern Territory,2022,0
 Northern Territory_2023,Northern Territory,2023,0
 Northern Territory_2024,Northern Territory,2024,0
+Western Australia_1991,Western Australia,1991,108
+Western Australia_1992,Western Australia,1992,114
+Western Australia_1993,Western Australia,1993,130
+Western Australia_1994,Western Australia,1994,143
+Western Australia_1995,Western Australia,1995,149
+Western Australia_1996,Western Australia,1996,153
+Western Australia_1997,Western Australia,1997,160
+Western Australia_1998,Western Australia,1998,183
+Western Australia_1999,Western Australia,1999,195
+Western Australia_2000,Western Australia,2000,208
+Western Australia_2001,Western Australia,2001,220
+Western Australia_2002,Western Australia,2002,242
+Western Australia_2003,Western Australia,2003,269
+Western Australia_2004,Western Australia,2004,282
+Western Australia_2005,Western Australia,2005,312
+Western Australia_2006,Western Australia,2006,332
+Western Australia_2007,Western Australia,2007,356
+Western Australia_2008,Western Australia,2008,361
+Western Australia_2009,Western Australia,2009,372
+Western Australia_2010,Western Australia,2010,382
+Western Australia_2011,Western Australia,2011,394
+Western Australia_2012,Western Australia,2012,389
+Western Australia_2013,Western Australia,2013,379
+Western Australia_2014,Western Australia,2014,366
+Western Australia_2015,Western Australia,2015,358
+Western Australia_2016,Western Australia,2016,346
+Western Australia_2017,Western Australia,2017,342
+Western Australia_2018,Western Australia,2018,319
+Western Australia_2019,Western Australia,2019,316
+Western Australia_2020,Western Australia,2020,317
+Western Australia_2021,Western Australia,2021,309
+Western Australia_2022,Western Australia,2022,304
+Western Australia_2023,Western Australia,2023,288
+Western Australia_2024,Western Australia,2024,281
+Tasmania_1991,Tasmania,1991,25
+Tasmania_1992,Tasmania,1992,34
+Tasmania_1993,Tasmania,1993,43
+Tasmania_1994,Tasmania,1994,51
+Tasmania_1995,Tasmania,1995,50
+Tasmania_1996,Tasmania,1996,51
+Tasmania_1997,Tasmania,1997,56
+Tasmania_1998,Tasmania,1998,56
+Tasmania_1999,Tasmania,1999,69
+Tasmania_2000,Tasmania,2000,69
+Tasmania_2001,Tasmania,2001,70
+Tasmania_2002,Tasmania,2002,75
+Tasmania_2003,Tasmania,2003,83
+Tasmania_2004,Tasmania,2004,77
+Tasmania_2005,Tasmania,2005,77
+Tasmania_2006,Tasmania,2006,81
+Tasmania_2007,Tasmania,2007,90
+Tasmania_2008,Tasmania,2008,92
+Tasmania_2009,Tasmania,2009,98
+Tasmania_2010,Tasmania,2010,104
+Tasmania_2011,Tasmania,2011,112
+Tasmania_2012,Tasmania,2012,115
+Tasmania_2013,Tasmania,2013,117
+Tasmania_2014,Tasmania,2014,113
+Tasmania_2015,Tasmania,2015,115
+Tasmania_2016,Tasmania,2016,112
+Tasmania_2017,Tasmania,2017,111
+Tasmania_2018,Tasmania,2018,100
+Tasmania_2019,Tasmania,2019,102
+Tasmania_2020,Tasmania,2020,99
+Tasmania_2021,Tasmania,2021,99
+Tasmania_2022,Tasmania,2022,95
+Tasmania_2023,Tasmania,2023,93
+Tasmania_2024,Tasmania,2024,93
