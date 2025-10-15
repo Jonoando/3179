@@ -4,6 +4,7 @@
   "height": 520,
   "title": "Density of Wine Producers by State",
   "projection": { "type": "mercator", "center": [134, -25], "scale": 900 },
+
   "params": [
     {
       "name": "year_select",
@@ -11,10 +12,11 @@
       "bind": { "input": "range", "name": "Year Selection Slider: ", "min": 1991, "max": 2024, "step": 1 }
     }
   ],
+
   "layer": [
     {
       "data": {
-        "url": "js/AustralianMapWithGraticules.topojson",
+        "url": "js/ne_50m_admin_1_states_provinces.json",
         "format": { "type": "topojson", "feature": "ne_50m_admin_1_states_provinces" }
       },
       "transform": [
@@ -23,7 +25,10 @@
         {
           "lookup": "key",
           "from": {
-            "data": { "url": "data/producers_by_state_year.csv" },
+            "data": {
+              "url": "data/producers_by_state_year.csv",
+              "format": { "type": "csv", "parse": { "value": "number" } }
+            },
             "key": "key",
             "fields": ["value"]
           }
@@ -43,14 +48,16 @@
         ]
       }
     },
+
     {
       "data": {
-        "url": "js/AustralianMapWithGraticules.topojson",
+        "url": "js/ne_110m_graticules_5.json",
         "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#d3d3d3", "strokeWidth": 0.5 }
     }
   ],
+
   "config": {
     "view": { "stroke": null },
     "axis": { "labelFontSize": 12, "titleFontSize": 12 },
