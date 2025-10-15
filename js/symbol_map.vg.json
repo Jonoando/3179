@@ -16,7 +16,7 @@
   "layer": [
     {
       "data": {
-        "url": "js/ne_50m_admin_1_states_provinces.json",
+        "url": "js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_50m_admin_1_states_provinces" }
       },
       "transform": [
@@ -48,10 +48,9 @@
         ]
       }
     },
-
     {
       "data": {
-        "url": "js/ne_110m_graticules_5.json",
+        "url": "js/AustralianMapWithGraticules.topojson",
         "format": { "type": "topojson", "feature": "ne_110m_graticules_5" }
       },
       "mark": { "type": "geoshape", "fill": null, "stroke": "#d3d3d3", "strokeWidth": 0.5 }
