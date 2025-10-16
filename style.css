@@ -1,8 +1,8 @@
 :root {
   --maxw: 1100px;
   --pad: 16px;
-  --bg: #f7f7f8;
-  --card: #ffffff;
+  --bg: #eef1f4;   
+  --card: #ffffff;   
   --ink: #1f2937;
   --muted: #6b7280;
   --border: #e5e7eb;
@@ -31,17 +31,37 @@ html, body {
   font-weight: 700;
 }
 
-h3 {
-  margin: 0 0 8px;
-  font-size: 1.05rem;
-}
-
 section {
   max-width: var(--maxw);
-  margin: 0 auto 28px;
-  padding: 0 var(--pad) 8px;
-  border-top: 1px solid var(--border);
+  margin: 28px auto;
+  padding: 24px var(--pad);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  position: relative;
 }
+
+section:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #e0e3e7;
+  margin: 24px 0 0;
+  border-radius: 2px;
+}
+
+section::before,
+section::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 1px;
+  background: #e0e3e7;
+  opacity: 0.8;
+}
+section::before { left: 0; }
+section::after  { right: 0; }
 
 .analysis-section {
   display: grid;
@@ -49,7 +69,12 @@ section {
   column-gap: 3%;
   align-items: start;
   justify-content: center;
-  margin: 12px auto 8px;
+  margin: 0 auto;
+}
+
+.analysis-section.single {
+  grid-template-columns: 100%;
+  column-gap: 0;
 }
 
 .chart-container, .text-analysis { min-width: 0; }
@@ -60,9 +85,11 @@ section {
   box-shadow: 0 1px 2px rgba(0,0,0,0.06);
   padding: 8px;
   min-height: 360px;
+  overflow: hidden;
 }
 
-.chart-container svg, .chart-container canvas {
+.chart-container svg,
+.chart-container canvas {
   max-width: 100%;
   height: auto;
   display: block;
@@ -75,7 +102,10 @@ section {
   padding: 14px 16px;
   color: var(--ink);
 }
-
+.text-analysis h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
 .text-analysis p { margin: 0 0 10px; }
 .text-analysis .source {
   font-size: 0.85rem;
@@ -97,29 +127,5 @@ section {
 
 @media (max-width: 420px) {
   .page-header h1 { font-size: 1.4rem; }
-  h3 { font-size: 1rem; }
-}
-
-body {
-  background: #eef1f4; 
-}
-
-
-section {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-  padding: 24px var(--pad);
-  margin: 28px auto;
-}
-
-
-section:not(:last-of-type)::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background: #e0e3e7;
-  margin: 24px 0 0;
-  border-radius: 2px;
+  .text-analysis h3 { font-size: 1rem; }
 }
