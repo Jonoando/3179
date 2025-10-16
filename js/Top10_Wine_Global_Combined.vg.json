@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": { "text": "Top 10 Wine: Exporters, Importers & Producers (per capita)", "anchor": "middle", "fontSize": 22, "fontWeight": "bold" },
+  "autosize": { "type": "fit", "contains": "padding" },
+  "width": "container",
+
+  "params": [
+    { "name": "year_select", "value": 2024, "bind": { "input": "range", "name": "Year: ", "min": 2000, "max": 2024, "step": 1 } }
+  ],
+
+  "vconcat": [
+    {
+      "height": 380,
+      "title": { "text": "Top 10 Wine Exporters per Capita (USD)", "anchor": "middle", "fontSize": 16 },
+      "data": { "url": "data/Global_Export_Wine_Per_Capita_USD.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.Year == year_select" },
+        { "calculate": "toNumber(datum.Value)", "as": "Val" },
+        { "window": [{ "op": "rank", "as": "r" }], "sort": [{ "field": "Val", "order": "descending" }] },
+        { "filter": "datum.r <= 10" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "y": { "field": "Country", "type": "nominal", "sort": "-x", "title": null, "band": 0.9 },
+        "x": { "field": "Val", "type": "quantitative", "title": "USD per capita", "axis": { "tickCount": 6 } },
+        "color": { "condition": { "test": "datum.r == 1", "value": "#3b82f6" }, "value": "#b8c2d9" },
+        "opacity": { "condition": { "test": "datum.r == 1", "value": 1 }, "value": 0.9 },
+        "tooltip": [
+          { "field": "Country", "type": "nominal" },
+          { "field": "Year", "type": "quantitative" },
+          { "field": "Val", "type": "quantitative", "title": "USD per capita", "format": ".2f" }
+        ]
+      }
+    },
+
+    {
+      "height": 380,
+      "title": { "text": "Top 10 Wine Importers per Capita (USD)", "anchor": "middle", "fontSize": 16 },
+      "data": { "url": "data/Global_Import_Wine_Per_Capita_USD.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.Year == year_select" },
+        { "calculate": "toNumber(datum.Value)", "as": "Val" },
+        { "window": [{ "op": "rank", "as": "r" }], "sort": [{ "field": "Val", "order": "descending" }] },
+        { "filter": "datum.r <= 10" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "y": { "field": "Country", "type": "nominal", "sort": "-x", "title": null, "band": 0.9 },
+        "x": { "field": "Val", "type": "quantitative", "title": "USD per capita", "axis": { "tickCount": 6 } },
+        "color": { "condition": { "test": "datum.r == 1", "value": "#3b82f6" }, "value": "#b8c2d9" },
+        "opacity": { "condition": { "test": "datum.r == 1", "value": 1 }, "value": 0.9 },
+        "tooltip": [
+          { "field": "Country", "type": "nominal" },
+          { "field": "Year", "type": "quantitative" },
+          { "field": "Val", "type": "quantitative", "title": "USD per capita", "format": ".2f" }
+        ]
+      }
+    },
+
+    {
+      "height": 380,
+      "title": { "text": "Top 10 Wine Producers per Capita", "anchor": "middle", "fontSize": 16 },
+      "data": { "url": "data/Global_Country_Wine_Prod_Per_Capita.csv", "format": { "type": "csv" } },
+      "transform": [
+        { "filter": "datum.Year == year_select" },
+        { "calculate": "toNumber(datum.Value)", "as": "Val" },
+        { "window": [{ "op": "rank", "as": "r" }], "sort": [{ "field": "Val", "order": "descending" }] },
+        { "filter": "datum.r <= 10" }
+      ],
+      "mark": { "type": "bar", "cornerRadiusEnd": 2 },
+      "encoding": {
+        "y": { "field": "Country", "type": "nominal", "sort": "-x", "title": null, "band": 0.9 },
+        "x": { "field": "Val", "type": "quantitative", "title": "Per capita (units in source)", "axis": { "tickCount": 6 } },
+        "color": { "condition": { "test": "datum.r == 1", "value": "#3b82f6" }, "value": "#b8c2d9" },
+        "opacity": { "condition": { "test": "datum.r == 1", "value": 1 }, "value": 0.9 },
+        "tooltip": [
+          { "field": "Country", "type": "nominal" },
+          { "field": "Year", "type": "quantitative" },
+          { "field": "Val", "type": "quantitative", "title": "Per capita", "format": ".2f" }
+        ]
+      }
+    }
+  ],
+
+  "config": {
+    "axis": { "labelFontSize": 12, "titleFontSize": 12 },
+    "view": { "stroke": null }
+  }
+}
