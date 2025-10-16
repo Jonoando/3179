@@ -1,9 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 880,
+  "title": "Wine Producers by State (1991–2024)",
+  "autosize": { "type": "fit", "contains": "padding" },
+  "width": "container",
   "height": 520,
-  "title": "Density of Wine Producers by State",
-  "projection": { "type": "mercator", "center": [134, -25], "scale": 900 },
+  "projection": { "type": "mercator" },
 
   "params": [
     {
@@ -40,7 +41,7 @@
           "field": "value",
           "type": "quantitative",
           "title": "Producers",
-          "scale": { "scheme": "blues", "domain": [0, 800], "clamp": true }
+          "scale": { "scheme": "blues", "clamp": true }
         },
         "tooltip": [
           { "field": "state", "type": "nominal", "title": "State" },
