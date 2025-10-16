@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Review of Australia’s Wine Industry</title>
-  <meta name="description" content="A simple, fast-loading overview of Australian wine production by state and long-run alcohol consumption trends using Vega-Lite." />
+  <meta name="description" content="A simple, fast-loading overview of Australian wine production by state, alcohol consumption trends, and global top-10 rankings using Vega-Lite." />
   <link rel="stylesheet" href="style.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -26,8 +26,8 @@
         <p>
           Victoria was the largest wine-producing state for a long time until South Australia
           overtook it in the late 2010s. New South Wales has consistently maintained 3rd spot.
-          Despite year to year variations, the number of producers has remained relatively stable,
-          suggesting a mature and well established wine industry.
+          Despite year-to-year variations, the number of producers has remained relatively stable,
+          suggesting a mature and well-established wine industry.
           <em>Note: ACT and NSW were combined in this visualisation.</em>
         </p>
         <p class="source">
@@ -47,7 +47,7 @@
       <aside class="text-analysis">
         <h3>Consumption Trend</h3>
         <p>
-          Alcohol consumption in Australia peaked in the mid 1970s at over 13 litres per person,
+          Alcohol consumption in Australia peaked in the mid-1970s at over 13 litres per person,
           driven largely by beer. Since then, overall consumption has gradually declined.
           However, wine consumption has shown a steady upward trend, highlighting a shift
           towards wine despite reduced total alcohol intake.
@@ -62,9 +62,16 @@
     </div>
   </section>
 
+  <section>
+    <div class="analysis-section single">
+      <div class="chart-container" id="top10-combined"></div>
+    </div>
+  </section>
+
   <script>
     vegaEmbed("#map", "js/symbol_map.vg.json", { actions: false });
     vegaEmbed("#timeseries", "js/timeseries.vg.json", { actions: false });
+    vegaEmbed("#top10-combined", "js/Top10_Wine_Global_Combined.vg.json", { actions: false });
   </script>
 </body>
 </html>
