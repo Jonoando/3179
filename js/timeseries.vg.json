@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Australia: Apparent Alcohol Consumption per Capita (L of Pure Alcohol)",
-  "width": 780,
+  "title": "Australia’s Alcohol Consumption per Capita by Beverage Type",
+  "autosize": { "type": "fit", "contains": "padding" },
+  "width": "container",
   "height": 380,
   "data": { "url": "data/Apparent_Consumption_Per_Capita.csv" },
 
@@ -17,7 +18,16 @@
     {
       "mark": { "type": "line", "strokeWidth": 2 },
       "encoding": {
-        "x": { "field": "Year ended 30 June", "type": "ordinal", "title": "Year" },
+        "x": {
+          "field": "Year ended 30 June",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 0,
+            "labelFontSize": 11,
+            "labelExpr": "toNumber(substring(datum.label,0,4)) % 10 == 0 ? datum.label : ''"
+          }
+        },
         "y": { "field": "Val", "type": "quantitative", "title": "Litres per capita" },
         "color": {
           "field": "Series",
