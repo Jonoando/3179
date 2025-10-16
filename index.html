@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A Review of Australia’s Wine Industry</title>
-  <meta name="description" content="A simple, fast-loading overview of Australian wine production by state, alcohol consumption trends, and global top-10 rankings using Vega-Lite." />
+  <meta name="description" content="Overview of Australian wine production by state, alcohol consumption trends, and global top-10 rankings using Vega-Lite." />
   <link rel="stylesheet" href="style.css" />
+  <!-- Silence favicon 404 in Console -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
+  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -17,10 +20,10 @@
     <h1>A Review of Australia’s Wine Industry</h1>
   </header>
 
+  <!-- SECTION 1: Map + notes -->
   <section>
     <div class="analysis-section">
       <div class="chart-container" id="map"></div>
-
       <aside class="text-analysis">
         <h3>Industry Insight</h3>
         <p>
@@ -40,10 +43,10 @@
     </div>
   </section>
 
+  <!-- SECTION 2: Time series + notes -->
   <section>
     <div class="analysis-section">
       <div class="chart-container" id="timeseries"></div>
-
       <aside class="text-analysis">
         <h3>Consumption Trend</h3>
         <p>
@@ -62,16 +65,18 @@
     </div>
   </section>
 
+  <!-- SECTION 3: Global Top-10 combined (single slider controls all three) -->
   <section>
     <div class="analysis-section single">
       <div class="chart-container" id="top10-combined"></div>
     </div>
   </section>
 
+  <!-- Embeds -->
   <script>
-    vegaEmbed("#map", "js/symbol_map.vg.json", { actions: false });
-    vegaEmbed("#timeseries", "js/timeseries.vg.json", { actions: false });
-    vegaEmbed("#top10-combined", "js/Top10_Wine_Global_Combined.vg.json", { actions: false });
+    vegaEmbed("#map", "js/symbol_map.vg.json", { actions: false }).catch(console.error);
+    vegaEmbed("#timeseries", "js/timeseries.vg.json", { actions: false }).catch(console.error);
+    vegaEmbed("#top10-combined", "js/top10_wine_global_combined.vg.json", { actions: false }).catch(console.error);
   </script>
 </body>
 </html>
