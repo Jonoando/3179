@@ -16,7 +16,7 @@
 
   "layer": [
     {
-      "mark": { "type": "line", "strokeWidth": 2 },
+      "mark": { "type": "line", "strokeWidth": 5 },
       "encoding": {
         "x": {
           "field": "Year ended 30 June",
@@ -81,6 +81,7 @@
   ],
 
   "config": {
+    "title": { "fontSize": 18, "fontWeight": "bold", "anchor": "middle" },
     "axis": { "labelFontSize": 12, "titleFontSize": 12 },
     "legend": { "labelFontSize": 12, "titleFontSize": 12 }
   }
