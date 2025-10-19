@@ -5,7 +5,6 @@
   "width": "container",
   "height": 520,
   "projection": { "type": "mercator" },
-
   "params": [
     {
       "name": "year_select",
@@ -13,7 +12,6 @@
       "bind": { "input": "range", "name": "Year Selection Slider: ", "min": 1991, "max": 2024, "step": 1 }
     }
   ],
-
   "layer": [
     {
       "data": {
@@ -57,8 +55,8 @@
       "mark": { "type": "geoshape", "fill": null, "stroke": "#d3d3d3", "strokeWidth": 0.5 }
     }
   ],
-
   "config": {
+    "title": { "fontSize": 18, "fontWeight": "bold", "anchor": "middle" },
     "view": { "stroke": null },
     "axis": { "labelFontSize": 12, "titleFontSize": 12 },
     "legend": { "titleFontSize": 12, "labelFontSize": 12 }
