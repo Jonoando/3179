@@ -1,8 +1,8 @@
 :root {
-  --maxw: 1100px;
+  --maxw: 1280px;
   --pad: 16px;
-  --bg: #eef1f4;   
-  --card: #ffffff;   
+  --bg: #eef1f4;
+  --card: #ffffff;
   --ink: #1f2937;
   --muted: #6b7280;
   --border: #e5e7eb;
@@ -24,6 +24,7 @@ html, body {
   margin: 24px auto 8px;
   padding: 0 var(--pad);
 }
+
 .page-header h1 {
   text-align: center;
   font-size: 1.7rem;
@@ -55,13 +56,15 @@ section::before,
 section::after {
   content: "";
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0;
+  bottom: 0;
   width: 1px;
   background: #e0e3e7;
   opacity: 0.8;
 }
+
 section::before { left: 0; }
-section::after  { right: 0; }
+section::after { right: 0; }
 
 .analysis-section {
   display: grid;
@@ -69,7 +72,6 @@ section::after  { right: 0; }
   column-gap: 3%;
   align-items: start;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .analysis-section.single {
@@ -77,7 +79,10 @@ section::after  { right: 0; }
   column-gap: 0;
 }
 
-.chart-container, .text-analysis { min-width: 0; }
+.chart-container,
+.text-analysis {
+  min-width: 0;
+}
 
 .chart-container {
   background: var(--card);
@@ -101,31 +106,64 @@ section::after  { right: 0; }
   box-shadow: 0 1px 2px rgba(0,0,0,0.06);
   padding: 14px 16px;
   color: var(--ink);
+  width: 90%;
+  margin: 16px auto 0;
 }
+
 .text-analysis h3 {
   margin: 0 0 8px;
   font-size: 1.05rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
 }
-.text-analysis p { margin: 0 0 10px; }
+
+.text-analysis p {
+  margin: 0 0 10px;
+}
+
 .text-analysis .source {
   font-size: 0.85rem;
   color: var(--muted);
   margin-top: 10px;
+  font-style: italic;
 }
-.text-analysis a { color: #2563eb; text-decoration: none; }
-.text-analysis a:hover { text-decoration: underline; }
+
+.text-analysis a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.text-analysis a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 900px) {
   .analysis-section {
     grid-template-columns: 100%;
     column-gap: 0;
   }
-  .chart-container, .text-analysis {
+
+  .chart-container,
+  .text-analysis {
     width: 100%;
   }
 }
 
 @media (max-width: 420px) {
-  .page-header h1 { font-size: 1.4rem; }
-  .text-analysis h3 { font-size: 1rem; }
+  .page-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .text-analysis h3 {
+    font-size: 1rem;
+  }
+}
+
+#top10-combined {
+  min-height: 900px;
+}
+
+.analysis-section .text-analysis {
+  margin-top: 12px;
 }
