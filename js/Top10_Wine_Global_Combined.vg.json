@@ -1,13 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": { "text": "Top 10 Wine: Exporters, Importers & Producers (per capita)", "anchor": "middle", "fontSize": 22, "fontWeight": "bold" },
   "autosize": { "type": "fit", "contains": "padding" },
   "width": "container",
-
   "params": [
     { "name": "year_select", "value": 2024, "bind": { "input": "range", "name": "Year: ", "min": 2000, "max": 2024, "step": 1 } }
   ],
-
   "vconcat": [
     {
       "height": 380,
@@ -32,7 +29,6 @@
         ]
       }
     },
-
     {
       "height": 380,
       "title": { "text": "Top 10 Wine Importers per Capita (USD)", "anchor": "middle", "fontSize": 16 },
@@ -56,7 +52,6 @@
         ]
       }
     },
-
     {
       "height": 380,
       "title": { "text": "Top 10 Wine Producers per Capita", "anchor": "middle", "fontSize": 16 },
@@ -81,8 +76,8 @@
       }
     }
   ],
-
   "config": {
+    "title": { "fontSize": 18, "fontWeight": "bold", "anchor": "middle" },
     "axis": { "labelFontSize": 12, "titleFontSize": 12 },
     "view": { "stroke": null }
   }
