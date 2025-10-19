@@ -167,3 +167,12 @@ section::after { right: 0; }
 .analysis-section .text-analysis {
   margin-top: 12px;
 }
+.page-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 40px 0 20px;
+}
+.page-footer strong {
+  color: #1f2937;
+}
